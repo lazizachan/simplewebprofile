@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enter your password</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- header section -->
+      <header>
+        <h1>Enter your password</h1>
+        <div class="user_profile">
+          <img
+            class="use_avatar"
+            src="./picture/userprofile.jpg"
+            alt="woman's photo"
+          />
+          <div class="account_label">
+            <span class="user_status">Business account</span>
+            <span class="user_name">Sarah Bills</span>
+          </div>
+        </div>
+      </header>
+      <!-- main section -->
+      <main>
+        <label class="psd" for="password">Password</label> <br />
+        <div class="paswwordlabel">
+          <i class="fa-solid fa-lock"></i>
+          <input
+            class="password"
+            type="password"
+            id="password"
+            name="password"
+          />
+          <i class="fa-regular fa-eye-slash"></i>
+        </div>
+        <br />
+        <div class="switchbox">
+          <div class="switchlabel">
+            <label class="switch" for="checkbox">
+              <input type="checkbox" name="checkbox" id="checkbox" />
+              <span class="slider"></span>
+            </label>
+            <span class="signedin">Stay signed in</span>
+          </div>
+          <div class="btnbox">
+            <button class="btn_continue"><a href="#">continue</a></button>
+          </div>
+        </div>
+      </main>
+      <!-- footer section -->
+      <footer>
+        <a class="reset_pass" href="#">Reset password</a>
+        <a href=""> <i class="fa-solid fa-code-branch"></i></a>
+      </footer>
+    </div>
+  </body>
+</html>

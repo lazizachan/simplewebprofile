@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+.container {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0;
+  border-radius: 10px;
+  background-color: white;
+}
+/* header section */
+header {
+  width: 350px;
+  margin-bottom: 1rem;
+}
+header h1 {
+  margin-bottom: 1rem;
+  color: #002244;
+}
+.user_profile {
+  width: 450px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.use_avatar {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.account_label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.user_status {
+  color: #002244;
+}
+.user_name {
+  color: #002244;
+  font-weight: 900;
+}
+/* main section */
+
+main {
+  width: 350px;
+}
+
+.paswwordlabel {
+  position: relative;
+}
+
+.fa-lock {
+  position: absolute;
+  left: 0;
+  top: 12px;
+  padding-left: 1rem;
+  color: #002244;
+}
+.fa-eye-slash {
+  color: #002244;
+}
+.password {
+  width: 300px;
+  height: 45px;
+  border-radius: 10px;
+  text-align: center;
+}
+.switchbox {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.signedin {
+  text-align: center;
+  color: #002244;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  border: 1px solid #002244;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #002244;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+.btn_continue {
+  width: 120px;
+  height: 40px;
+  background-color: #002244;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.btn_continue a {
+  text-decoration: none;
+  color: white;
+}
+/* footer section  */
+footer {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.reset_pass {
+  color: #002244;
+}
